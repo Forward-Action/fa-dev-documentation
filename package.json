@@ -2,7 +2,7 @@
   "license": "MIT",
   "name": "fa-dev-documentation",
   "version": "1.0.0",
-  "description": "Forward Action Developer Documentation",
+  "description": "Forward Action Documentation",
   "devDependencies": {
     "honkit": "^6.1.4"
   },
