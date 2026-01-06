@@ -21,6 +21,7 @@ All documentation is found in the `files` directory. Edit the .md files here or 
 When first setting up the project. Run the following commands:
 ````
 yarn install
+yarn add honkit --dev
 yarn start
 ````
 

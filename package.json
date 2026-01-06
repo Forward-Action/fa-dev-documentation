@@ -10,8 +10,9 @@
     "honkit": "honkit build",
     "clean": "node -e \"require('fs').rmdirSync('docs/', { recursive: true }); process.exit(0);\"",
     "rename": "node -e \"require('fs').rename('_book', 'docs', function(err) { if (err) console.log(err); console.log('File successfully renamed!') })\"",
-    "start": "yarn honkit && yarn rename",
-    "build": "yarn honkit && yarn clean && yarn rename",
+    "copy_cname": "node -e \"require('fs').copyFile('CNAME', 'docs/CNAME', function(err) { if (err) console.log(err); console.log('File successfully copied!') })\"",
+    "start": "yarn honkit && yarn rename && yarn copy_cname",
+    "build": "yarn honkit && yarn clean && yarn rename && yarn copy_cname",
     "serve": "honkit serve"
   }
 }
